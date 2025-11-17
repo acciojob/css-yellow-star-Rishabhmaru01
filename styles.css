@@ -1,21 +1,20 @@
 .star {
   width: 0;
   height: 0;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-bottom: 80px solid yellow;
+  border-left: 50px solid rgba(0,0,0,0);
+  border-right: 50px solid rgba(0,0,0,0);
+  border-bottom: 100px solid rgb(255,255,0);
   position: relative;
-  margin: 100px;
 }
 
-.star:after {
+.star::after {
   content: "";
   width: 0;
   height: 0;
   position: absolute;
-  top: 20px;
+  top: 40px;           /* moves second triangle down */
   left: -50px;
-  border-left: 50px solid transparent;
-  border-right: 50px solid transparent;
-  border-top: 80px solid yellow;
+  border-left: 50px solid rgba(0,0,0,0);
+  border-right: 50px solid rgba(0,0,0,0);
+  border-top: 100px solid rgb(255,255,0);
 }
